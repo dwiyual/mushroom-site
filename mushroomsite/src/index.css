@@ -48,3 +48,12 @@ code {
 #Logo {
   margin: 1rem;
 }
+
+#Navlinks:hover {
+  color:gray ;
+}
+
+#Tagline {
+  color: white;
+  font: italic;
+}

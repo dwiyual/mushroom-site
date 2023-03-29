@@ -1,14 +1,16 @@
 
 
 
-.App {
-  background: url(../src/images/backgroundimg.png) ;
-  color: aliceblue;
-  height: 100%;
-  width: 100%;
-}
 
 #root {
   background: url(../src/images/backgroundimg.png);
   background-size: cover;
+}
+
+#Tagline {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font: italic;
 }

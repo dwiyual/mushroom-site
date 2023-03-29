@@ -2,8 +2,10 @@ function NavBar() {
     return (
         <nav id="NavBar" style={{
             backgroundImage:`gradient(to right, hex#60362a, hex#1c1718)`,
+            alignItems:`center`,
+            justifyContent:`center`,
         }}>
-            <image>Logo Here</image>
+            <image id="Logo">Logo Here</image>
             <div id="NavLinks" style={{
                 display:`flex`,
                 justifyContent:`flex-end`,
@@ -19,6 +21,9 @@ function NavBar() {
                 <a className="navlink" href='#Blog'>Blog</a>
                 <a className="navlink" href='#Contact'>Contact us</a>
             </div>
+            <label>
+            <input type="text" name="search" b/> Search
+            </label>
         </nav>
     )
 
