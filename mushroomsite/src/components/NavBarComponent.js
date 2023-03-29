@@ -7,15 +7,17 @@ function NavBar() {
             <div id="NavLinks" style={{
                 display:`flex`,
                 justifyContent:`flex-end`,
-                marginLeft:`36rem`,
-                marginRight:`0`,
+                alignItems:`center`,
                 textDecoration:`none`,
+                textDecorationColor:`white`,
+                textDecorationLine:`none`,
+                margin:`0 2rem 0 36rem`,
                 
             }}>
-                <ul><a href='#Home'>Home</a></ul>
-                <ul><a href='#GrowKit'>Grow Kit</a></ul>
-                <ul><a href='#Blog'>Blog</a></ul>
-                <ul><a href='#Contact'>Contact us</a></ul>
+                <a className="navlink" href='#Home'>Home</a>
+                <a className="navlink" href='#GrowKit'>Grow Kit</a>
+                <a className="navlink" href='#Blog'>Blog</a>
+                <a className="navlink" href='#Contact'>Contact us</a>
             </div>
         </nav>
     )

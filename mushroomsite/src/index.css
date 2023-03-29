@@ -7,7 +7,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: white;
+  
   
   
 
@@ -30,9 +30,18 @@ code {
 #root {
   background: url(../src/images/backgroundimg.png);
   background-size: cover;
-  width: 210.5vh;
+  width: 210.25vh;
   height: 100vh;
   margin: auto;
 }
 
+.navlink {
+  color: white;
+  text-decoration: none;
+  text-decoration-line: none;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 1rem;
+}
 
