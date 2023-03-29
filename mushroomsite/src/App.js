@@ -12,10 +12,10 @@ function App() {
         <nav>
           <image>Logo Here</image>
           <link>
-          <a href='#'>Home</a>
-          <a href='#'>Grow Kit</a>
-          <a href='#'>blog</a>
-          <a href='#'>Contact us</a>
+          <a href='#Home'>Home</a>
+          <a href='#GrowKit'>Grow Kit</a>
+          <a href='#Blog'>Blog</a>
+          <a href='#Contact'>Contact us</a>
           </link>
         </nav>
       </head>
