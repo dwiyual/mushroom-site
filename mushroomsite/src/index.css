@@ -29,8 +29,10 @@ code {
 
 #root {
   background: url(../src/images/backgroundimg.png);
-  background-size:auto;
-  width: 70vw;
+  background-size: cover;
+  width: 210.5vh;
   height: 100vh;
   margin: auto;
 }
+
+
