@@ -55,5 +55,6 @@ code {
 
 #Tagline {
   color: white;
-  font: italic;
+  font-family: 'Regular 400', cursive;
+  font-size: larger;
 }
