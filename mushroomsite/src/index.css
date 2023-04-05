@@ -53,8 +53,24 @@ code {
   color:gray ;
 }
 
-#Tagline {
+.Tagline {
   color: white;
   font-family: 'Regular 400', cursive;
-  font-size: larger;
+  font-size: xx-large;
+}
+
+#Company-Mission {
+  color: white;
+  background-color: #A59D8E;
+  opacity: 50;
+  width: 60vw;
+  height: 30vh;
+  margin: auto;
+  
+}
+
+.ShopItem {
+  display: flex;
+  justify-content: space-evenly;
+  align-items:center;
 }
