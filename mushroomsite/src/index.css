@@ -60,9 +60,8 @@ code {
 }
 
 #Company-Mission {
+  background-color: #A59D8E ;
   color: white;
-  background-color: #A59D8E;
-  opacity: 50;
   width: 60vw;
   height: 30vh;
   margin: auto;
