@@ -1,6 +1,7 @@
 import './App.css';
 import NavBar from './components/NavBarComponent';
 import Tagline from './components/TagLineComponent';
+import ShopItem from './components/ShopItemComponent';
 
 
 
@@ -15,7 +16,11 @@ function App() {
             <Tagline>
             </Tagline>
         </header>
-
+        <footer>
+          <ShopItem>
+          </ShopItem>
+          <ShopItem></ShopItem>
+        </footer>
       </div>
     </div>
   );
