@@ -2,7 +2,7 @@ import React from 'react';
 
 const ShopItem = ({ imageSrc, name, description, price }) => {
   return (
-    <div className="ShopItem">
+    <div className="product-card">
       <div className="product-image">
         <img src={imageSrc} alt={name} />
       </div>
@@ -17,3 +17,4 @@ const ShopItem = ({ imageSrc, name, description, price }) => {
 };
 
 export default ShopItem;
+

@@ -1,3 +1,4 @@
+import React from 'react';
 import './App.css';
 import NavBar from './components/NavBarComponent';
 import Tagline from './components/TagLineComponent';
