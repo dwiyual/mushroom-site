@@ -60,11 +60,16 @@ code {
 }
 
 #Company-Mission {
-  background-color: #A59D8E ;
-  color: white;
   width: 60vw;
   height: 30vh;
   margin: auto;
+  
+}
+
+.Mission-Paragraph {
+  background-color: beige;
+  opacity: 70%;
+  color: black;
   
 }
 
@@ -72,11 +77,12 @@ code {
     position: fixed;
     bottom: 0;
     width: 100%;
-    padding: 20px;
+    padding: 2px;
+    margin: .5rem;
   
 }
 
 .product-image {
-  height: 1.5rem;
-  width: 1.5rem;
+  height: 1rem;
+  width: 2rem;
 }

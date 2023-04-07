@@ -1,7 +1,8 @@
 import React from 'react';
+import "../../src/index.css";
 
 const products = [
-  {id: 1, imageSrc: "../src/images/LionsMane.jpg", name:"Lion's Mane", description:"Lion's Mane mushroom", price: 20}
+  {id: 1, imageSrc: "../src/images/LionsMane.png", name:"Lion's Mane", description:"Lion's Mane mushroom", price: 20}
   ]
 
 const ShopItem = ({ imageSrc, name, description, price }) => {
