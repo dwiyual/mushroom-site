@@ -2,6 +2,10 @@ import React from 'react';
 import ProductCard from './ProductCard';
 import Slider from 'react-slick';
 
+const products = [
+{id: 1, imageSrc: "../src/images/LionsMane.jpg", name:"Lion's Mane", description:"Lion's Mane mushroom", price: 20}
+]
+
 const ProductCarousel = ({ products }) => {
   const settings = {
     dots: false,
