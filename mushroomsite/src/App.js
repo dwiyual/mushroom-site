@@ -18,9 +18,7 @@ function App() {
             </Tagline>
         </header>
         <footer>
-          <ShopItem>
-          </ShopItem>
-          <ShopItem></ShopItem>
+  
         </footer>
       </div>
     </div>
