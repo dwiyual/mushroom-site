@@ -76,7 +76,7 @@ code {
   
 }
 
-.ShopItem {
+.shop-item {
     position: fixed;
     bottom: 0;
     width: 100%;
@@ -85,7 +85,7 @@ code {
   
 }
 
-.product-image {
-  height: 1rem;
-  width: 2rem;
+.shop-image {
+  height: 10rem;
+  width: 10rem;
 }

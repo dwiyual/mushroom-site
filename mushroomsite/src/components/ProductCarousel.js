@@ -3,8 +3,12 @@ import Slider from 'react-slick';
 import ShopItem from './ShopItemComponent';
 
 const products = [
-{id: 1, imageSrc: "../src/images/LionsMane.jpg", name:"Lion's Mane", description:"Lion's Mane mushroom", price: 20}
-]
+{ id: 1,
+  name: 'Lionsmaine',
+  imageSrc: './images/LionsMane.png',
+  description: 'Lionsmaine mushroom is very benificial to your brain.',
+  price: '20'}
+];
 
 const ProductCarousel = ({ products}) => {
   const settings = {

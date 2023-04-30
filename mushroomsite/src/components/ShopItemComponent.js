@@ -3,12 +3,12 @@ import "../../src/index.css";
 
 
 function ShopItem(props) {
-  const { name, image, description, price } = props;
+  const { name, image, description, price,  } = props;
 
   return (
     
     <div className="shop-item">
-      <img src={image} alt={name} />
+      <img className='shop-img' src={image} alt={name} />
       <div className="item-details">
         <h3>{name}</h3>
         <p>{description}</p>
