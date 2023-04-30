@@ -1,15 +1,16 @@
 import React from "react";
 import ShopItem from "../components/ShopItemComponent";
-import Navbar from "../components/NavBarComponent"
+
 
 
 function Shop () {
     return (
         <div>
-            <Navbar></Navbar>
             <div className="Shop">
                 <div className="ShopItem">
-                    <ShopItem />
+                    <ShopItem name='Lionsmaine' image='./images/LionsMane.png' description='Lionsmaine mushroom is very benificial to your brain.' price ='20' >
+                        
+                    </ShopItem>
                 </div>
             </div>
         </div>

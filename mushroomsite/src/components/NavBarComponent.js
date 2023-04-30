@@ -10,7 +10,7 @@ function NavBar() {
             alignItems: `center`,
             justifyContent: `center`,}}>
                 
-            <img id="Logo" alt="logo" >Logo Here</img>
+            
             <div id="NavLinks" style={{
                 display: `flex`,
                 justifyContent: `flex-end`,
