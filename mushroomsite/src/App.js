@@ -1,35 +1,29 @@
 import React from 'react';
 import './App.css';
+import './index.css';
 import NavBar from './components/NavBarComponent';
 import Tagline from './components/TagLineComponent';
-import { BrowserRouter as Router, Route,} from 'react-router-dom';
+//import { Outlet } from 'react-router-dom';
+import {  Routes, Route } from 'react-router-dom';
 import Shop from './pages/shop';
 import GrowKit from './pages/growkit';
 import Blog from './pages/blog';
 import Contact from './pages/contact';
 
-
-
-
 function App() {
   return (
-    <div>
-      <NavBar>
-      </NavBar>
-      <Router>
-        <Route path="/shop" element= {<Shop />}></Route>
-        <Route path="/growkit" element={<GrowKit />}></Route>
-        <Route path="/blog" element={<Blog />}></Route>
-        <Route path="/contact" element={<Contact />}></Route>
-      </Router>
-      <div className="App">
+    <div className="App">
+        <NavBar />
         <header>
-          <Tagline>
-          </Tagline>
+          <Tagline />
         </header>
-        <footer>
-        </footer>
-      </div>
+        <Routes>
+          <Route path="/shop" element={<Shop />} />
+          <Route path="/growkit" element={<GrowKit />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+        <footer />
     </div>
   );
 }

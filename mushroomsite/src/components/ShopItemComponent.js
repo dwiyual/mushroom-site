@@ -6,7 +6,7 @@ const products = [
   ]
 
 const ShopItem = ({ imageSrc, name, description, price }) => {
-  return (
+    return (
     <div className="ShopItem">
       <div className="product-image">
         <img src={products[0].imageSrc} alt={products[0].name} />
@@ -19,7 +19,7 @@ const ShopItem = ({ imageSrc, name, description, price }) => {
       </div>
     </div>
   );
-};
+}
 
 export default ShopItem;
 
