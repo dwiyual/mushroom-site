@@ -9,9 +9,9 @@ function NavBar() {
             alignItems: `center`,
             justifyContent: `center`,
         }}>
-            <image id="Logo">Logo Here</image>
-            <div id="NavLinks" style={{
-                display: `flex`,
+            <img id="Logo" alt="logo" src="#">Logo Here</img>
+            <div id="NavLinks"  style={{
+                display: `flex`, 
                 justifyContent: `flex-end`,
                 alignItems: `center`,
                 textDecoration: `none`,
