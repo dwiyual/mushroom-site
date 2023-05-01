@@ -3,16 +3,15 @@ import "../../src/index.css";
 
 
 function ShopItem(props) {
-  const { name, image, description, price,  } = props;
+  const { name, imageSrc, description, price } = props;
 
   return (
-    
     <div className="shop-item">
-      <img className='shop-img' src={image} alt={name} />
+      <img src={imageSrc} alt={name} />
       <div className="item-details">
         <h3>{name}</h3>
         <p>{description}</p>
-        <p>${price}/Lbs</p>
+        <p>${price}</p>
         <button>Add to cart</button>
       </div>
     </div>

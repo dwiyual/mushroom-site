@@ -2,7 +2,7 @@ import React from 'react';
 import './index.css';
 import './App.css';
 //import NavBar from './components/NavBarComponent';
-import Tagline from './components/TagLineComponent';
+import Tagline from './components/TagLine';
 import { Routes, Route, Link } from 'react-router-dom';
 import Shop from './pages/shop';
 import GrowKit from './pages/growkit';
@@ -16,7 +16,8 @@ export function App() {
         <nav id="NavBar" style={{
           backgroundImage: `gradient(to right, hex#60362a, hex#1c1718)`,
           alignItems: `center`,
-          justifyContent: `center`, }}>
+          justifyContent: `center`,
+        }}>
 
           <div id="NavLinks" style={{
             display: `flex`,
@@ -25,26 +26,39 @@ export function App() {
             textDecoration: `none`,
             textDecorationColor: `white`,
             textDecorationLine: `none`,
-            margin: `0 2rem 0 36rem`, }}>
-
+            margin: `0 2.1rem 0 34rem`,
+            padding: `3em`,
+          }}>
             <Link to="/">
-              <li className='navlink'>Home</li>
+              <ul>
+                <li className='navlink'>Home</li>
+              </ul>
             </Link>
             <Link to="/shop">
-              <li className='navlink'>Shop</li>
+              <ul>
+                <li className='navlink'>Shop</li>
+              </ul>
             </Link>
             <Link to="/growkit">
-              <li className='navlink'>Grow Kit</li>
+              <ul>
+                <li className='navlink'>GrowKit</li>
+              </ul>
             </Link>
             <Link to="/blog">
-              <li className='navlink'>Blog</li>
+              <ul>
+                <li className='navlink'>Blog</li>
+              </ul>
             </Link>
             <Link to="/contact">
-              <li className='navlink'>Contact</li>
+              <ul>
+                <li className='navlink'>Contact</li>
+              </ul>
             </Link>
+
           </div>
+          Search
           <label>
-            <input type="text" name="search" /> Search
+            <input className='searchbar' type="text" name="search" /> 
           </label>
         </nav>
         <header className="App-header">

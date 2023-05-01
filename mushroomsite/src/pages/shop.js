@@ -3,17 +3,16 @@ import ProductCarousel from "../components/ProductCarousel";
 
 
 function Shop() {
-        
-        
-    return(
-    <div>
-        <div className="Shop">
-            <div className="ShopItem">
-                <ProductCarousel></ProductCarousel>
 
+
+    return (
+        <div>
+            <div className="Shop">
+                <div className="ShopItem">
+                    <ProductCarousel />
+                </div>
             </div>
-        </div>
-    </div >
+        </div >
     );
 }
 

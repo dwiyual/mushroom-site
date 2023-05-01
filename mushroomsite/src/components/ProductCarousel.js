@@ -1,16 +1,11 @@
 import React from 'react';
 import Slider from 'react-slick';
-import ShopItem from './ShopItemComponent';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+import ShopItem from './ShopItem';
 
-const products = [
-{ id: 1,
-  name: 'Lionsmaine',
-  imageSrc: './images/LionsMane.png',
-  description: 'Lionsmaine mushroom is very benificial to your brain.',
-  price: '20'}
-];
 
-const ProductCarousel = ({ products}) => {
+const ProductCarousel = ({ products }) => {
   const settings = {
     dots: false,
     infinite: true,
@@ -19,23 +14,25 @@ const ProductCarousel = ({ products}) => {
     slidesToScroll: 3
   };
 
+  const ShopItems = [
+    {
+      id: 1,
+      name: 'Lionsmaine',
+      imageSr: './images/LionsMane.png',
+      description: 'Lionsmaine mushroom is very benificial to your brain.',
+      price: '20'
+    }
+  ];
+  
+
   return (
     <div className="product-carousel">
       <Slider {...settings}>
-        <ShopItem />
-        {products.map(product => (
-          <div key={product.id}
-              imageSrc={product.imageSrc}
-              name={product.name}
-              description={product.description}
-              price={product.price}
-          >
-          
-          </div>
-          
+      {ShopItems.map(item => (
+          <ShopItem key={item.id} name={item.name} imageSr={item.imageSr} description={item.description} price={item.price} />
         ))}
       </Slider>
-    </div>
+      </div>
   );
 };
 

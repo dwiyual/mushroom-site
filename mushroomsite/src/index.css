@@ -1,5 +1,9 @@
 body {
   margin: 0;
+  padding: 0;
+  background-image: url('https://www.example.com/background-image.jpg');
+  background-size: cover;
+  background-position: center;
   height: 100vh;
   width: 100vw;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -7,19 +11,12 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  
-  
-  
-
- 
 }
 
 nav {
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   color: white;
-  
-
 }
 
 code {
@@ -30,15 +27,25 @@ code {
 #root {
   background: url(../src/images/backgroundimg.png);
   background-size: cover;
-  width: 210.25vh;
   height: 100vh;
-  margin: auto;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+}
+
+
+#NavBar {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  height: 10vh;
 }
 
 .navlink {
   color: white;
   text-decoration: none;
-  text-decoration-line: none;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -50,7 +57,7 @@ code {
 }
 
 #Navlinks:hover {
-  color:gray ;
+  color: gray;
 }
 
 .Tagline {
@@ -63,7 +70,6 @@ code {
   width: 60vw;
   height: 30vh;
   margin: auto;
-  
 }
 
 .Mission-Paragraph {
@@ -73,19 +79,70 @@ code {
   padding: 1%;
   font-family: 'Regular 400', cursive;
   line-height: 1.7rem;
-  
 }
 
 .shop-item {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    padding: 2px;
-    margin: .5rem;
-  
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 2px;
+  margin: .5rem;
 }
 
 .shop-image {
   height: 10rem;
   width: 10rem;
+}
+
+
+
+.searchbar {
+  box-sizing: border-box;
+  width: 100%;
+  border: none;
+  background: transparent;
+  padding: 0.5em;
+  border-bottom: 2px solid white;
+  font-size: 1em;
+  color: white;
+
+  &:focus {
+    outline: none;
+    border-bottom: 2px solid #f6b900;
+  }
+}
+
+
+@media only screen and (max-width: 768px) {
+  #NavBar {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .navlink {
+    padding: .5rem;
+    font-size: small;
+  }
+
+  .searchbar {
+    width: 1rem;
+    max-width: 1.5rem;
+    border-radius: 5px;
+    border: none;
+    margin-left: 1rem;
+    margin-right: auto;
+
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .navlink {
+    font-size: x-small;
+  }
+
+  .searchbar {
+    width: 4rem;
+    margin-left: .25rem;
+    margin-right: .25rem;
+  }
 }
