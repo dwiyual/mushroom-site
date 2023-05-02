@@ -2,7 +2,7 @@ import React from 'react';
 import './index.css';
 import './App.css';
 //import NavBar from './components/NavBarComponent';
-import Tagline from './components/TagLine';
+import Tagline from './components/TagLineComponent';
 import { Routes, Route, Link } from 'react-router-dom';
 import Shop from './pages/shop';
 import GrowKit from './pages/growkit';

@@ -2,12 +2,13 @@ import React from 'react';
 import "../../src/index.css";
 
 
+
 function ShopItem(props) {
-  const { name, imageSrc, description, price } = props;
+  const { id, name, imageSrc, description, price } = props;
 
   return (
     <div className="shop-item">
-      <img src={imageSrc} alt={name} />
+      <img src={imageSrc} alt={name} key={id} />
       <div className="item-details">
         <h3>{name}</h3>
         <p>{description}</p>
@@ -17,5 +18,8 @@ function ShopItem(props) {
     </div>
   );
 }
+
+
+
 
 export default ShopItem;

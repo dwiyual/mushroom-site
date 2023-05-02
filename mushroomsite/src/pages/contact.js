@@ -5,7 +5,7 @@ function Blog () {
         <div>
             <div className="Blog">
                 <div className="BlogItem">
-                    <p>Blog</p>
+                    <p>Contact</p>
                 </div>
             </div>
         </div>

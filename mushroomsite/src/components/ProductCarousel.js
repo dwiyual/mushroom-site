@@ -5,7 +5,8 @@ import 'slick-carousel/slick/slick-theme.css';
 import ShopItem from './ShopItem';
 
 
-const ProductCarousel = ({ products }) => {
+
+const ProductCarousel = ({images}) => {
   const settings = {
     dots: false,
     infinite: true,
@@ -18,21 +19,21 @@ const ProductCarousel = ({ products }) => {
     {
       id: 1,
       name: 'Lionsmaine',
-      imageSr: './images/LionsMane.png',
+      imageSrc: '../images/LionsMane.png',
       description: 'Lionsmaine mushroom is very benificial to your brain.',
       price: '20'
     }
   ];
-  
+
 
   return (
     <div className="product-carousel">
       <Slider {...settings}>
-      {ShopItems.map(item => (
-          <ShopItem key={item.id} name={item.name} imageSr={item.imageSr} description={item.description} price={item.price} />
+        {ShopItems.map(item => (
+          <ShopItem key={item.id} name={item.name} imageSrc={item.imageSrc} description={item.description} price={item.price} />
         ))}
       </Slider>
-      </div>
+    </div>
   );
 };
 

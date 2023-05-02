@@ -1,5 +1,6 @@
 import React from "react";
 import ProductCarousel from "../components/ProductCarousel";
+import "../index.css";
 
 
 function Shop() {
@@ -9,7 +10,7 @@ function Shop() {
         <div>
             <div className="Shop">
                 <div className="ShopItem">
-                    <ProductCarousel />
+                    <ProductCarousel></ProductCarousel>
                 </div>
             </div>
         </div >
