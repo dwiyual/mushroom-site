@@ -9,6 +9,7 @@ import GrowKit from './pages/growkit';
 import Blog from './pages/blog';
 import Contact from './pages/contact';
 
+
 export function App() {
   return (
     <>
@@ -54,11 +55,9 @@ export function App() {
                 <li className='navlink'>Contact</li>
               </ul>
             </Link>
-
           </div>
-          Search
           <label>
-            <input className='searchbar' type="text" name="search" /> 
+            <input className='searchbar' type="text" name="search" placeholder='Search' />
           </label>
         </nav>
         <header className="App-header">
@@ -74,6 +73,8 @@ export function App() {
     </>
   );
 }
+
+
 
 
 export class Home
@@ -94,5 +95,11 @@ export class Home
     );
   }
 }
+
+
+
+
+
+
 
 export default App;

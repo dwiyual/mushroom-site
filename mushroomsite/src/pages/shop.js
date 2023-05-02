@@ -1,6 +1,7 @@
 import React from "react";
-import ProductCarousel from "../components/ProductCarousel";
 import "../index.css";
+import ImageSlider from "../components/ImageSlider";
+import images from "../images/img";
 
 
 function Shop() {
@@ -10,7 +11,7 @@ function Shop() {
         <div>
             <div className="Shop">
                 <div className="ShopItem">
-                    <ProductCarousel></ProductCarousel>
+                    <ImageSlider images={images} />
                 </div>
             </div>
         </div >
