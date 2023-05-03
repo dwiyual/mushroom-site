@@ -4,6 +4,7 @@ body {
   background-image: url('https://www.example.com/background-image.jpg');
   background-size: cover;
   background-position: center center;
+  color: white;
   height: 100vh;
   width: 100vw;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',

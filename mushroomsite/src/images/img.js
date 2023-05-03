@@ -1,6 +1,6 @@
 const images = [{
     id: 1,
-    src: "images/LionsMane.png",
+    src: "images/LionsMane.jpg",
     alt: "Image 1"
 },
 {
