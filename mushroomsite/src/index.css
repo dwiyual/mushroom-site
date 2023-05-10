@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  background-image: url('https://www.example.com/background-image.jpg');
+  background-image: url('images/Background.jpg');
   background-size: cover;
   background-position: center center;
   color: white;
