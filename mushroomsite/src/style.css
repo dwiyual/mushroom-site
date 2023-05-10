@@ -12,3 +12,15 @@ body {
 	width: 50%;
 	height: 50%;
 }
+
+.slicktrack {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.slicklist {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}

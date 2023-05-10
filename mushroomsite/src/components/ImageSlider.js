@@ -5,33 +5,41 @@ import "../style.css";
 import React from 'react'
 
 
-const ImageSlider = ({images}) => {
+const ImageSlider = ({ images }) => {
 
-const settings = {
-	infinite: true,
-	dots: true,
-	slidesToShow: 1,
-	slidesToScroll: 1,
-	lazyLoad: true,
-	autoplay: true,
-autoplaySpeed: 4000,
+	const settings = {
+		width: 100,
+		dots: true,
+		fade: true,
+		infinite: true,
+		speed: 500,
+		slidesToShow: 1,
+		slidesToScroll: 1
 
-};
-return (
-	<>
-	<div className="tag">
-		<h1>Image Gallery</h1>
-	</div>
-	<div className="imgslider">
-		<Slider {...settings}>
-		{images.map((item) => (
-			<div key={item.id}>
-			<img src={item.src} alt={item.alt} />
+	};
+	return (
+		<>
+			<div className="tag">
+				<h1>Image Gallery</h1>
 			</div>
-		))}
-		</Slider>
-	</div>
+			<div className="imgslider">
+				<Slider {...settings}>
+					{images.map((item) => (
+						<div key={item.id}>
+							<img src={item.src} alt={item.alt} />
+						</div>
+
+
+					))}
+				</Slider>
+				<div>
+					<h3>{ImageSlider.name}</h3>
+					<p>{ImageSlider.description}</p>
+					<p>${ImageSlider.price}</p>
+					<button>Add to cart</button>
+				</div>
+			</div>
 		</>
-)
+	)
 }
 export default ImageSlider;
