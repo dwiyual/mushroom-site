@@ -5,7 +5,7 @@ import "../style.css";
 import React from 'react'
 
 
-const ImageSlider = ({ images }) => {
+export const ImageSlider = ({ images }) => {
 
 	const settings = {
 		width: 100,
@@ -13,8 +13,10 @@ const ImageSlider = ({ images }) => {
 		fade: true,
 		infinite: true,
 		speed: 500,
-		slidesToShow: 1,
-		slidesToScroll: 1
+		slidesToShow: 3,
+		slidesToScroll: 3,
+		className: "center",
+		centerPadding: "60px",
 
 	};
 	return (
@@ -27,19 +29,17 @@ const ImageSlider = ({ images }) => {
 					{images.map((item) => (
 						<div key={item.id}>
 							<img src={item.src} alt={item.alt} />
+							<div>
+								<h3>{item.name}</h3>
+								<p>{item.description}</p>
+								<p>${item.price}</p>
+								<button>Add to cart</button>
+							</div>
+
 						</div>
-
-
 					))}
 				</Slider>
-				<div>
-					<h3>{ImageSlider.name}</h3>
-					<p>{ImageSlider.description}</p>
-					<p>${ImageSlider.price}</p>
-					<button>Add to cart</button>
-				</div>
 			</div>
 		</>
 	)
 }
-export default ImageSlider;

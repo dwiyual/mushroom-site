@@ -1,5 +1,6 @@
 body {
 	background-color: green;
+	width: 100%;
 
 }
 
@@ -8,19 +9,43 @@ body {
 }
 
 .slick-slide img {
-	margin: 0;
-	width: 50%;
-	height: 50%;
+	margin: 5rem;
+	padding: 0;
+	width: 15rem;
+	height: 10rem;
+	
 }
 
-.slicktrack {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
+.product-carousel {
+	margin: auto;
+	max-width: 100% -20px; /* or any width you want */
+  }
+  
+  .slick-slide {
+	margin: 0 20px;
+  }
+  
+  .slick-list {
+	margin: 0 -20px;
+  }
+  
+  .slick-center {
+	transform: scale(1.1); /* optional - adds a zoom effect to the center image */
+  }
+  
+  .slick-center .shop-item {
+	border: 2px solid #333; /* optional - adds a border to the center image */
+  }
+  
+  .imgslider {
+	width: 90%;
+	margin: 3rem;
+  }
+  
 
-.slicklist {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
+  @media (max-width: 768px) {
+	.product-carousel {
+	  max-width: 400px; /* or any width you want for smaller screens */
+	}
+  }
+  

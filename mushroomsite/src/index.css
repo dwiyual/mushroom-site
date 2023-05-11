@@ -21,11 +21,7 @@ nav {
   color: white;
 }
 
-.App-header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+
 
 
 code {
@@ -39,7 +35,7 @@ code {
   background-position: center center;
   background-repeat: no-repeat;
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   margin: 0;
   padding: 0;
 }

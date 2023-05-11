@@ -1,7 +1,8 @@
 import React from "react";
 import "../index.css";
-import ImageSlider from "../components/ImageSlider";
+import {ImageSlider} from "../components/ImageSlider";
 import images from "../images/img";
+
 
 
 function Shop() {
@@ -11,7 +12,7 @@ function Shop() {
         <div>
             <div className="Shop">
                 <div className="ShopItem">
-                    <ImageSlider images={images} />
+                    <ImageSlider images ={images} />
                 </div>
             </div>
         </div >
